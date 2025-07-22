@@ -550,7 +550,7 @@ func RotateAIKCert(ctx context.Context, req *RotateAIKCertReq) error {
 		return err
 	}
 
-	// Parse Identity proof
+	// Parse   Identity proof
 	identityProof, err := ParseIdentityProof(identityProofBytes)
 	if err != nil {
 		err = fmt.Errorf("failed to decrypt identity proof: %w", err)
